@@ -11,10 +11,11 @@
 
 .popup-modal{
 	position: absolute;
+	
 	top: 25vh;
 	width: 40%;
 	left: 30%;
-	height: 50vh;
+	height: 60vh;
 	background: white;
 	border-radius: 3px;
 }

@@ -1,0 +1,153 @@
+<?php session_start();
+?>
+
+<!DOCTYPE html>
+<head>
+<title>signup PAGE</title>
+<script>
+      function showmessage(){
+
+        alert("Signed Up successfully!!");
+        
+        }
+      
+    </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+ background-image:linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)),url("img2.jpg");
+ 
+height: 100vx;
+background-size:cover;
+background-position:center;
+}
+.logo {
+ position: fixed;
+ top: 10px;
+ left: 10px;
+ }
+::placeholder{
+color:white;
+opacity:0.8;
+}
+
+input[type=password] {
+ width: 50%;
+  padding: 5px 5px;
+  margin: 8px 0;
+   box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+   color:white;
+}
+
+input[type=text] {
+ width: 50%;
+  padding: 5px 5px;
+  margin: 8px 0;
+   box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+   color:white;
+}
+
+input[type=tel] {
+ width: 50%;
+  padding: 5px 5px;
+  margin: 8px 0;
+   box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+   color:white;
+}
+
+input[type=email] {
+ width: 50%;
+  padding: 5px 5px;
+  margin: 8px 0;
+   box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+   color:white;
+}
+
+form
+{margin-left:480px;
+ margin-right:480px;
+}
+fieldset {color:white;border:0px solid white;text-align:center;border-radius:40px;
+background:rgba(0,0,0,0.7);
+}
+
+.button {
+position: absolute;
+top: 90%;
+left:50%;
+transform: translate(-50%,-50%);
+}
+.btn {
+text-decoration:none;
+color: #fff;
+padding: 10px 50px;
+border: 2px solid #fff;
+border-radius: 20px 20px 20px 20px;
+background-color:rgba(0,0,0,0.7);
+}
+.btn:hover {
+background-color: white;
+color: black;
+opacity:0.8;
+border: 2px solid black;
+}
+
+@media screen and (max-width:650px) {
+ form{
+    width:70%;
+    margin-left:15%;
+ margin-right:15%;
+  }
+
+.button {
+ top: 100%;
+}
+
+img{
+ 
+ width: 20%;
+}
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="logo">
+<img src="logonew.png" width="200" height="100"></div>
+
+<form method="post" action="connect1.php">
+<fieldset>
+<!--<legend align="center">--><h1 style='color:white; align:center;'> SIGN UP </h1>
+<div align="center">
+<b>First Name</b><br>
+<input type="text" name="fname" placeholder="Firstname" autocomplete="off"><br><br><b>
+Last Name</b></center><br>
+
+<input type="text" name="lname" placeholder="Lastname" autocomplete="off"><br><br><b>
+Telephone</b><br>
+<input type="tel" name="phone"  maxlength="10" autocomplete="off"><br><br><b>
+E-mail</b><br>
+<input type="email" name="email" autocomplete="off"><br><br><b>
+Password</b><br>
+<input type="password" name="password" placeholder="Password" maxlength="6" autocomplete="off"><br><br><b>
+Confirm password</b><br>
+<input type="password" name="password" placeholder="Password" maxlength="6" autocomplete="off"><br><br><br>
+</div>
+</fieldset>
+<div class="button">
+<!--<a href="doorstep.html" class="btn" onclick="showmessage()"><b>--><button type="button" name="user_reg">SUBMIT</button>
+</form>

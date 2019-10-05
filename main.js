@@ -5,7 +5,7 @@ let popupModal = document.querySelector('.popup-modal');
 let popupLeftHalf = document.querySelector('#left-half');
 let popupRightHalf = document.querySelector('#right-half');
 let leftButtons = [];
-let allOptions = [['a', 'b', 'c'], ['aa', 'ab', 'ac'], ['bb', 'bc', 'bd'], [], [], []];
+let allOptions = [['Electrician', 'Carpenter', 'Plumber'], ['Domestic relocation', 'Vehicle relocation'], [], ['Mosquito control','Cockroach control','Ant control','Bed bug control'], [], ['AC','Refrigerator','Washing Machine','Water purifier']];
 let allIcons = [['fas fa-tools', 'fas fa-tools', 'fas fa-tools'], ['fas fa-tools', 'fas fa-tools', 'fas fa-tools'], ['fas fa-tools', 'fas fa-tools', 'fas fa-tools'], [], [], []];
 
 const populateLeft = () => {

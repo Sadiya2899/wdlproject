@@ -1,0 +1,25 @@
+.fixed .topright{
+	float:right;
+	margin:right:10px;
+	margin-top:10px;
+	
+	
+	
+}
+.fixed .topright p{
+	color:white;
+	font-size:20px;
+	float:left;
+	margin-right:130px;
+	margin-top:4px;
+
+}
+.fixed .topright a:link{
+	
+	background-color:#09092a;
+	color:white;
+	float:right;
+	font-size:15px;
+	margin-right:10px;
+}
+

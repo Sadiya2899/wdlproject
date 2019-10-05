@@ -1,4 +1,6 @@
+<?php session_start();
 
+?>
 <!DOCTYPE html>
 <html>
 
@@ -14,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style3.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
 
     <script type="text/javascript">
@@ -39,30 +42,17 @@
 
     <div class="fixed">
       <img class="img1" src="logonew.png" />
+      <div class="topright">
+      
+      <p>Welcome <?php echo $_SESSION['username']; ?>!!</p>
+      <!--<p><a href="logout.php" >LOGOUT</a></p>
+      -->
+      </div>
 
       <div class="menu">
         <ul>
 
-          <li class="active"><a href="signup.php"><i class="fa fa-fw fa-user"></i><b>SIGN UP</b>
-                <ul>
-                <li><a href="signup.php">USER</a></li>
-                <li><a href="signupSP.php">SERVICE PROVIDER</a></li>
-      
-                </ul>
-
-
-          </li>
-
-          <li class="active"><a href="login.php"><i class="fa fa-fw fa-user"></i><b>LOG IN</b>
-                <ul>
-                <li><a href="login.php">USER</a></li>
-                <li><a href="loginSP.php">SERVICE PROVIDER</a></li>
-      
-                </ul>
-
-
-
-          </li>
+          <li class="active"><a href="logout.php"><b>LOGOUT</b></li>
           <li class="active"><a href="contact.html"><i class="fa fa-fw fa-envelope"></i><b>CONTACT US</b></li>
           <li class="active"><a onclick="openNav()"><b>ABOUT</b></li>
           <li class="active"><a href="doorstep.html"><i class="fa fa-fw fa-home"></i><b>HOME</b></li>
@@ -70,6 +60,7 @@
       </div>
 
     </div>
+    
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
@@ -160,26 +151,28 @@
     <body>
       <div class="categories">
 
-        <i class="fas fa-tools popup-btn" style='font-size:100px;margin-left:140px; color:#a6a6a6;'></i>
+        <i class="fas fa-tools popup-btn" style='font-size:100px;margin-left:100px; color:#a6a6a6;'></i>
         <i class="fas fa-people-carry popup-btn" style='font-size:100px;margin-left:140px; color:#a6a6a6;'></i>
         <i class='fas fa-broom popup-btn' style='font-size:100px;margin-left:80px; color:#a6a6a6;'></i>
         <i class='fas fa-bug popup-btn' style='font-size:100px;margin-left:80px; color:#a6a6a6;'></i>
         <!--<i class='fas fa-utensils' style='font-size:100px;margin-left:120px; color:#a6a6a6;'></i>-->
         <i class="material-icons popup-btn" style='font-size:100px;margin-left:100px; color:#a6a6a6;'>room_service</i>
-        <i class="material-icons popup-btn" style='font-size:100px;margin-left:140px; color:#a6a6a6;'>devices_other</i>
+        <i class="material-icons popup-btn" style='font-size:100px;margin-left:120px; color:#a6a6a6;'>devices_other</i>
         <br>
         <!--<a href="javascript: void(0)" style='font-family:Comic Sans MS;font-size:20px;color:white;margin-left:90px;'onclick="window.open('','','width=900,height=300,left=100,top=100,resizable=none,scrollbars=yes,toolbar=none,status=yes');">Electricians and Plumber</a>-->
-        <a href="elec.html" style='font-family:Comic Sans MS;font-size:20px;color:white;margin-left:90px;'>Electricians
+        <a href="elec.html" style='font-family:Comic Sans MS;font-size:20px;color:white;margin-left:60px;'>Electricians
           and Plumber</a>
         <a href="pack.html" style='font-family:Comic Sans MS;font-size:20px;color:white;margin-left:30px;'>Packers and
           Movers</a>
-        <a href="maid.html" style='font-family:Comic Sans MS;font-size:20px;color:white;margin-left:90px;'>Maids</a>
+        <a href="maid.html" style='font-family:Comic Sans MS;font-size:20px;color:white;margin-left:80px;'>Maids</a>
         <a href="pest.html" style='font-family:Comic Sans MS;font-size:20px;color:white;margin-left:100px;'>Pest
           Control</a>
         <a href="tiffin.html" style='font-family:Comic Sans MS;font-size:20px;color:white;margin-left:80px;'>Tiffin
           Service</a>
-        <a href="ele.html" style='font-family:Comic Sans MS;font-size:20px;color:white;margin-left:30px;'>Electronics &
-          Appliances Repair</a>
+        <a href="ele.html" style='font-family:Comic Sans MS;font-size:20px;color:white;margin-left:27px;'>
+          
+      
+          </a>
 
         <br>
         <br>

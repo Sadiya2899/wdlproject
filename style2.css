@@ -1,0 +1,109 @@
+
+body {
+ background-image:linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)),url("img2.jpg");
+ 
+height: 100vx;
+background-size:cover;
+background-position:center;
+}
+.logo {
+ position: fixed;
+ top: 10px;
+ left: 10px;
+ }
+::placeholder{
+color:white;
+opacity:0.8;
+}
+
+input[type=password] {
+ width: 50%;
+  padding: 5px 5px;
+  margin: 8px 0;
+   box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+   color:white;
+}
+
+input[type=text] {
+ width: 50%;
+  padding: 5px 5px;
+  margin: 8px 0;
+   box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+   color:white;
+}
+
+input[type=tel] {
+ width: 50%;
+  padding: 5px 5px;
+  margin: 8px 0;
+   box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+   color:white;
+}
+
+input[type=email] {
+ width: 50%;
+  padding: 5px 5px;
+  margin: 8px 0;
+   box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+   color:white;
+}
+
+form
+{margin-left:480px;
+ margin-right:480px;
+}
+fieldset {color:white;border:0px solid white;text-align:center;border-radius:40px;
+background:rgba(0,0,0,0.7);
+}
+
+.button {
+position: absolute;
+top: 90%;
+left:50%;
+transform: translate(-50%,-50%);
+}
+.btn {
+text-decoration:none;
+color: #fff;
+padding: 10px 50px;
+border: 2px solid #fff;
+border-radius: 20px 20px 20px 20px;
+background-color:rgba(0,0,0,0.7);
+}
+.btn:hover {
+background-color: white;
+color: black;
+opacity:0.8;
+border: 2px solid black;
+}
+
+@media screen and (max-width:650px) {
+ form{
+    width:70%;
+    margin-left:15%;
+ margin-right:15%;
+  }
+
+.button {
+ top: 100%;
+}
+
+img{
+ 
+ width: 20%;
+}
+}
+
+
