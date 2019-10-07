@@ -31,35 +31,51 @@ $result=mysqli_query($con,$query);
     <title>Document</title>
 
     <style> 
-            h1 { 
-                color:black; 
-            } 
+            
             div.scroll { 
                 margin-left:25px;
                 padding:4px; 
-                background-color: white; 
-                width: 900px; 
-                height: 500px;
+               background-image:linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)),url("img2.jpg");
+ 
+                
+                background-size:cover;
+                background-position:center;
+                width: 1350px; 
+                height: 800px;
                 margin-top:150px;
                 margin-bottom:30px;
-                float:left; 
+                margin-right:25px;
+                align:center; 
                 overflow-x: hidden; 
                 overflow-x: auto; 
                 text-align:justify; 
             } 
             
         </style> 
+        <script>
+          function myFunction(){
+            //alert("Your booking is successful");
+            //document.getElementById("Button").disabled=true;
+            fetch('localhost/wdl/userdatatovijay.php')
+              .then(() => {
+                document.getElementById("Button").disabled=true;
+                alert('Your request is sent');
+              })
+              .catch(console.log);
+          }
+        </script>
+        
     </head>
   <body>
    <div class="fixed">
       <img class="img1" src="logonew.png" />
-
+      
       <div class="menu">
         <ul>
 
           
           
-          <li class="active"><a href="logout.php"></i><b>LOGOUT</b></li>
+          <li class="active"><a href="logout.php"></i><b>LOGOUT</b></a></li>
         </ul>
       </div>
 
@@ -88,13 +104,13 @@ $result=mysqli_query($con,$query);
                       <p style="margin-left:100px; color:black;">LOCATION : <?php echo $rows['location']; ?></p> 
                        <?php if($rows['status']=="A") { ?>
                             <!--<p style="margin-left:180px;"><button type="button" class="btn btn-success" name="reg_user" onclick="">BOOK NOW</button></p>-->
-                            <form method="post" action="userdatatovijay.php">
-                              <button type="submit" name="reg_user">SUBMIT</button>
-                            </form>
+                            
+                              <p style="margin-left:180px;"><button id="Button" type="button" name="reg_user" onclick="myFunction()">BOOK NOW</button></p>
+                            
                         <?php } else { ?>
                             <p style="margin-left:180px;"><button type="button" class="btn btn-secondary btn-lg" disabled>BUSY</button></p>
                         <?php }  ?>
-                        
+                  
                     </div>
                     <div class="row">
                       <p style="margin-left:100px; color:black;">AVAILABILITY : <?php echo $rows['availability']; ?></p>
