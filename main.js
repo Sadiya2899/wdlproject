@@ -7,15 +7,13 @@ let popupRightHalf = document.querySelector('#right-half');
 let leftButtons = [];
 let allOptions = [['Electrician', 'Carpenter', 'Plumber'], ['Domestic relocation', 'Vehicle relocation'], [], ['Mosquito control', 'Cockroach control', 'Ant control', 'Bed bug control'], [], ['AC', 'Refrigerator', 'Washing Machine', 'Water purifier']];
 let allIcons = [['fas fa-tools', 'fas fa-tools', 'fas fa-tools'], ['fas fa-tools', 'fas fa-tools', 'fas fa-tools'], ['fas fa-tools', 'fas fa-tools', 'fas fa-tools'], [], [], []];
-<<<<<<< HEAD
+
 let allLinks = [['/wdl/first.php', '/', '/'], ['/abcd.html', '/'], [], ['/', '/', '/', '/'], [], ['/', '/', '/', '/']];
 
 const BASE_URL = 'http://localhost'
-=======
-let allLinks = [['/abc.html', '/', '/'], ['/abcd.html', '/'], [], ['/', '/', '/', '/'], [], ['/', '/', '/', '/']];
 
-const BASE_URL = 'http://localhost:8000'
->>>>>>> b9ce094fac334b80a9f278f9e8ae627bf3501aeb
+
+
 
 const populateLeft = () => {
 	leftOptions.forEach((option, index) => {

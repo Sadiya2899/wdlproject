@@ -24,15 +24,67 @@ Last Name</b></center><br>
 
 <input type="text" name="lname" placeholder="Lastname" autocomplete="off"><br><br>--><b>
 Telephone</b><br>
-<input type="tel" name="phone"  maxlength="10" autocomplete="off"><br><br><b>
+<input type="tel" name="phone"  maxlength="10" autocomplete="off" required><br><br><b>
 E-mail</b><br>
 <input type="email" name="email" autocomplete="off"><br><br><b>
 Password</b><br>
+
+
+
+
 <input type="password" name="password1" placeholder="Password" maxlength="6" autocomplete="off"><br><br><b>
 Confirm password</b><br>
-<input type="password" name="password2" placeholder="Password" maxlength="6" autocomplete="off"><br><br><br>
+<input type="password" name="password2" placeholder="Password" maxlength="6" autocomplete="off"><br><br>
 </div>
+
+
+<div include="form-input-select()">
+  <select name="names" required>
+    <!--
+      This is how we can do "placeholder" options.
+      note: "required" attribute is on the select
+    -->
+    <option value=""
+            hidden
+    >Type of Service Provider</option>
+
+    <!-- normal options -->
+    <option value="1">Electrician</option>
+    <option value="2">Plumber</option>
+    <option value="3">Carpenter</option>
+    <option value="4">Maid</option>
+    
+  </select>
+
+</div>
+<br>
+
+
+<div include="form-input-select()">
+  <select name="location" required>
+    <!--
+      This is how we can do "placeholder" options.
+      note: "required" attribute is on the select
+    -->
+    <option value=""
+            hidden
+    >Location</option>
+
+    <!-- normal options -->
+    <option value="1">Nerul</option>
+    <option value="2">Thane</option>
+    <option value="3">Panvel</option>
+    <option value="4">Airoli</option>
+     <option value="4">Ghansoli</option>
+
+    
+  </select>
+
+</div>
+
 </fieldset>
+
+
 <div class="button">
 <!--<a href="doorstep.html" class="btn" onclick="showmessage()"><b>--><button type="submit" name="reg_user">SUBMIT</button></div>
 
